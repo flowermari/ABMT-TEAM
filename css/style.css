@@ -82,6 +82,27 @@
         transition: all 0.3s ease;
         cursor: pointer;
     }
+
+    .horario-link{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .horario-link:hover{
+        background-color: var(--accent-color);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
     
     .btn:hover {
         background-color: var(--accent-color);
@@ -133,12 +154,12 @@
     .logo {
         font-size: 1.8rem;
         font-weight: bold;
-        color: var(--text-light);
+        color:var(--primary-color);
         text-decoration: none;
     }
     
     .logo span {
-        color: var(--primary-color);
+        color: var(--text-light);
     }
     
     nav ul {
@@ -442,10 +463,14 @@
     
     .contact-item {
         display: flex;
-        align-items: center;
-        margin-bottom: 20px;
+        gap: 15px;
+        margin-bottom: 15px;
     }
     
+    .p-contact{
+        margin-top: 10px;
+    }
+
     .contact-icon {
         width: 50px;
         height: 50px;
@@ -490,6 +515,10 @@
         background-color: #111;
         color: white;
         padding: 50px 0 20px;
+        display: flex;
+        justify-content: c;
+        align-items: center;
+        justify-content: space-between;
     }
     
     .footer-content {
